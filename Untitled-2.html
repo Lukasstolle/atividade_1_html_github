@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gotham - Batman</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5d742;
+
+  /* FUNDO GOTHAM REALISTA */
+  background: 
+    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    url("https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1000px;
+  padding: 30px;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 217, 0, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(255, 217, 0, 0.1);
+}
+
+h1, h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 217, 0, 0.6);
+}
+
+p {
+  color: #cfd8dc;
+}
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5d742;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 10px #f5d742;
+}
+
+#apresentacao {
+  border-left: 6px solid #f5d742;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.bat-img {
+  width: 280px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s;
+  filter: brightness(80%);
+}
+
+.bat-img:hover {
+  transform: scale(1.08);
+  filter: brightness(100%);
+  box-shadow: 0 0 25px rgba(255, 217, 0, 0.6);
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+footer a {
+  color: #f5d742;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="box">
+  <h1>Gotham City</h1>
+  <p>Vigilância • Tecnologia • Estratégia</p>
+</header>
+
+<nav class="box">
+  <ul>
+    <li><a href="#gotham">Gotham</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#missoes">Missões</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="box" id="gotham">
+  <h2>Quem é o Batman</h2>
+  <p>
+    Bruce Wayne é o vigilante que protege Gotham. Sem superpoderes,
+    ele depende de treinamento extremo, inteligência estratégica
+    e tecnologia avançada.
+  </p>
+  <p>
+    Gotham representa corrupção, desigualdade e violência urbana —
+    e o Batman surge como símbolo de resistência nas sombras.
+  </p>
+</section>
+
+<section class="box" id="galeria">
+  <h2>Galeria</h2>
+  <div class="gallery">
+    <img class="bat-img" src="https://images.unsplash.com/photo-1608889175357-d0f8d7bcbdb3?auto=format&fit=crop&w=600&q=80" />
+    <img class="bat-img" src="https://images.unsplash.com/photo-1601924638867-3ec2d4e58c89?auto=format&fit=crop&w=600&q=80" />
+    <img class="bat-img" src="https://images.unsplash.com/photo-1612036782180-6f0b6cd5e6d1?auto=format&fit=crop&w=600&q=80" />
+  </div>
+</section>
+
+<section class="box" id="missoes">
+  <h2>Missões</h2>
+  <p>
+    Combater o crime organizado, enfrentar vilões icônicos
+    e restaurar o equilíbrio em uma cidade dominada pelo caos.
+  </p>
+</section>
+
+</main>
+
+<footer class="box">
+  <p><a href="#">Voltar ao topo</a></p>
+  <p>Projeto estilo Gotham realista.</p>
+</footer>
+
+</div>
+
+</body>
+</html>

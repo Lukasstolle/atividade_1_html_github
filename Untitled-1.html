@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Site do Batman</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: rgb(20, 19, 19);
+      color: rgb(235, 215, 42);
+      font-family: system-ui, Arial, sans-serif;
+      line-height: 1.5;
+
+      display: flex;
+      justify-content: center; /* Centraliza o site */
+    }
+
+    .container {
+      width: 900px;
+      padding: 20px;
+    }
+
+    .box {
+      background: black;
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: rgb(253, 220, 32);
+    }
+
+    h2 {
+      color: rgb(253, 220, 32);
+    }
+
+    p {
+      color: aqua;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Centraliza menu */
+      gap: 20px;
+    }
+
+    nav a {
+      color: rgb(240, 243, 33);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    #apresentacao {
+      border-left: 8px solid rgb(224, 221, 0);
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .bat-img {
+      width: 280px;
+      height: 390px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .bat-img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    .link {
+      color: rgb(224, 221, 6);
+      text-decoration: none;
+    }
+
+    .link:hover {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="box">
+      <h1>Site do Batman</h1>
+      <p>
+        Bem-vindo a Gotham City:
+        <strong>vigilância</strong>,
+        <em>tecnologia</em> e estratégia
+      </p>
+    </header>
+
+    <nav class="box">
+      <ul>
+        <li><a href="#gotham">Gotham</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#missoes">Missões</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section class="box" id="gotham">
+        <h2>Quem é o Batman</h2>
+
+        <p>
+          Batman (Bruce Wayne) é um personagem da DC Comics que atua como
+          justiceiro de Gotham. Ele não tem superpoderes; sua força está em
+          <strong>treinamento</strong>, <em>inteligência</em> e recursos
+          financeiros.
+        </p>
+
+        <p>
+          Nas histórias, Gotham aborda problemas sociais reais como
+          desigualdade, corrupção e violência urbana. Muitos quadrinhos usam
+          o Batman como forma de <strong>crítica social</strong>.
+        </p>
+      </section>
+
+      <section class="box" id="galeria">
+        <h2>Galeria</h2>
+
+        <div class="gallery">
+          <img class="bat-img" src="red.webp" alt="Batman vermelho" />
+          <img class="bat-img" src="trevas.jpg" alt="Batman Cavaleiro das Trevas" />
+          <img class="bat-img" src="fogo.jpg" alt="Batman com prédio em chamas" />
+        </div>
+      </section>
+
+      <section class="box" id="missoes">
+        <h2>Missões</h2>
+        <p>
+          Combater o crime, enfrentar vilões como Coringa, Pinguim e Charada
+          e proteger Gotham City.
+        </p>
+      </section>
+
+    </main>
+
+    <footer class="box">
+      <p><a class="link" href="#">Topo</a></p>
+      <p>Exemplo para treino de HTML e CSS.</p>
+    </footer>
+
+  </div>
+</body>
+</html>

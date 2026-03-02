@@ -11,15 +11,68 @@
 
       body {
         box-sizing: context-box;
-        background-color:rgb(20, 19, 19);
-        color:rgb(252, 252, 252);
-        font-family:system-ui, Arial, sans-serif;
-        margin=0;
+        background-color: rgb(20, 19, 19);
+        color: rgb(235, 215, 42);
+        font-family: system-ui, Arial, sans-serif;
+        margin: =0;
         line-height: 1.5;
       }
-      nav a{
-        color:red;
+      .link {
+        color: rgb(224, 221, 6);
       }
+      nav a {
+        color: rgb(240, 243, 33);
+      }
+
+      .container {
+        width: 900px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      .box {
+        background: black;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 14px;
+        margin-bottom: 12px;
+      }
+
+      h1{
+        color:rgb(253, 220, 32);
+        margin: 0 0 8px;
+      }
+      .header.interno p{
+        margin: 0;
+        color:#d1d5db 
+      }
+      p{
+        color:aqua;
+      }
+
+      #apresentacao {
+        border-left: 8px solid rgb(224, 221, 0)
+      }
+      .nav{
+        list-style:none;
+        margin:0;
+        padding:0;
+        display:flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
+
+      .nav-link{
+        display:inline-block;
+        text-decoration:none;
+        color:black;
+        background:rgb(255, 221, 0);
+        padding:8px 10px;
+        border-radius:10px;
+        font-weight:700;
+      }
+
+
     </style>
   </head>
 
@@ -52,53 +105,45 @@
       </nav>
 
       <main id="conteudo">
-        <div class="row" id="linha-1">
-          <section class="box-panel" id="apresentacao">
-            <h2>Quem é o Bataman</h2>
+        <section class="box" id="apresentacao">
+          <h2>Quem é o Bataman</h2>
 
-            <p>
-              Batman (Bruce Wayne) é um personagem da DC comics que atua como
-              justiceiro de Gotham. Ele não tem superpoderes, sua força está e,
-              <strong>treinamento</strong>, <em>inteligencia</em> e recursps (ou
-              seja, rico)
-            </p>
+          <p>
+            Batman (Bruce Wayne) é um personagem da DC comics que atua como
+            justiceiro de Gotham. Ele não tem superpoderes, sua força está e,
+            <strong>treinamento</strong>, <em>inteligencia</em> e recursps (ou
+            seja, rico)
+          </p>
 
-            <p>
-              Nas histórias, Gotham costuma problema sociais reais:
-              desigualdade, corrupção e violência urbana. Muitos quadrinhos usam
-              o Batman como forma de <strong>critica social</strong>, mostrando
-              como decições políticas, intereses ecônomicos, falhas nas
-              intituições e o autoritarismo afetam o cotidiano das pessoas,
-              especialmente nas periferias.
-            </p>
-          </section>
-        </div>
+          <p>
+            Nas histórias, Gotham costuma problema sociais reais: desigualdade,
+            corrupção e violência urbana. Muitos quadrinhos usam o Batman como
+            forma de <strong>critica social</strong>, mostrando como decições
+            políticas, intereses ecônomicos, falhas nas intituições e o
+            autoritarismo afetam o cotidiano das pessoas, especialmente nas
+            periferias.
+          </p>
+        </section>
 
         <section class="box" id="galeria">
           <h2>Galeria</h2>
           <div class="gallery" id="galeria-imagens">
             <img
               class="bat-img"
-              src="batman-funny.gif"
+              src="red.webp"
               .
-              width="220"
-              height="120"
+              width="280"
+              height="390"
             />
             <img
               class="bat-img"
-              src="batman-Gasp-meme-8.jpg"
+              src="trevas.jpg"
               .
-              width="220"
-              height="120"
+              width="280"
+              height="390"
             />
-            <img class="bat-img" src="aura.jpg" . width="220" height="120" />
-            <img
-              class="bat-img"
-              src="benicio coringa.png"
-              .
-              width="220"
-              height="120"
-            />
+            <img class="bat-img" src="fogo.jpg" . width="280" height="390" />
+            <img />
           </div>
         </section>
       </main>
