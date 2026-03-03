@@ -14,7 +14,7 @@
         background-color: rgb(20, 19, 19);
         color: rgb(235, 215, 42);
         font-family: system-ui, Arial, sans-serif;
-        margin:  0;
+        margin: 0;
         line-height: 1.5;
       }
       .link {
@@ -38,45 +38,70 @@
         margin-bottom: 12px;
       }
 
-      h1{
-        color:rgb(253, 220, 32);
+      h1 {
+        color: rgb(253, 220, 32);
         margin: 0 0 8px;
       }
-      .header.interno p{
+      .header.interno p {
         margin: 0;
-        color:#d1d5db 
+        color: #d1d5db;
       }
-      p{
-        color:aqua;
+      p {
+        color: aqua;
       }
 
       #apresentacao {
-        border-left: 8px solid rgb(224, 221, 0)
+        border-left: 8px solid rgb(224, 221, 0);
       }
-      .nav{
-        list-style:none;
-        margin:0;
-        padding:0;
-        display:flex;
+      .nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
         gap: 10px;
         flex-wrap: nowrap;
       }
 
-      .nav-link{
-        display:inline-block;
-        text-decoration:none;
-        color:black;
-        background:rgb(255, 221, 0);
-        padding:8px 10px;
-        border-radius:10px;
-        font-weight:700;
+      .nav-link {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        background: rgb(255, 221, 0);
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-weight: 700;
       }
 
       .nav.link:hover {
-        background: rgb(216, 174, 21);
+        background: rgb(190, 188, 31);
       }
 
+      .gallery {
+        width: 920px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: nowrap;
+      }
 
+      .bat-img {
+        width: 270px;
+        height: 390px;
+        border: 2px solid aliceblue;
+        border-radius: 10px;
+      }
+      footer p{
+        color: aqua;
+        margin: 6px 0 0;
+      }
+
+      .link{
+        color: rgb(255, 221, 0);
+        text-decoration: none;
+      }
+
+      .link:hover{
+        text-decoration: underline;
+      }
     </style>
   </head>
 
@@ -132,21 +157,9 @@
         <section class="box" id="galeria">
           <h2>Galeria</h2>
           <div class="gallery" id="galeria-imagens">
-            <img
-              class="bat-img"
-              src="red.webp"
-              .
-              width="280"
-              height="390"
-            />
-            <img
-              class="bat-img"
-              src="trevas.jpg"
-              .
-              width="280"
-              height="390"
-            />
-            <img class="bat-img" src="fogo.jpg" . width="280" height="390" />
+            <img class="bat-img" src="red.webp">
+            <img class="bat-img" src="trevas.jpg">
+            <img class="bat-img" src="fogo.jpg">
             <img />
           </div>
         </section>
